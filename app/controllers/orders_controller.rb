@@ -34,8 +34,13 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
+<<<<<<< HEAD
         OrderMailer.received(@order).deliver_later
         format.html { redirect_to store_index_url, notice: 'Thank you for your order' }
+=======
+        OrderMailer.received(@order).deliver_now!
+        format.html { redirect_to store_index_url, notice: 'Thank you for your order.' }
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
@@ -69,12 +74,15 @@ class OrdersController < ApplicationController
   end
 
   private
+<<<<<<< HEAD
     def ensure_cart_isnt_empty
       if @cart.line_items.empty?
         redirect_to store_index_url, notice: 'Your cart is empty'
       end
     end
 
+=======
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
     # Use callbacks to share common setup or constraints between actions.
     def set_order
       @order = Order.find(params[:id])
@@ -84,4 +92,13 @@ class OrdersController < ApplicationController
     def order_params
       params.require(:order).permit(:name, :address, :email, :pay_type)
     end
+<<<<<<< HEAD
+=======
+
+    def ensure_cart_isnt_empty
+      if @cart.line_items.empty?
+        redirect_to store_index_url, notice: 'Your cart is empty'
+      end
+    end
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
 end

@@ -6,5 +6,9 @@
     %tr.total_line
       %td{colspan: 2} Total
       %td.total_cell= number_to_currency(cart.total_price, unit: 'P')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
   = button_to 'Checkout', new_order_path, method: :get
   = button_to 'Empty Cart', cart, method: :delete, data: {confirm: "Are you sure?"}

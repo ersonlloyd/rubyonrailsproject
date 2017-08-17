@@ -49,6 +49,7 @@ describe 'Checkout Process', type: :feature do
     end
   end
 
+<<<<<<< HEAD
   describe 'Checkout Page' do 
     context 'when user has no line items' do 
       before do 
@@ -56,6 +57,17 @@ describe 'Checkout Process', type: :feature do
       end
 
       it 'redirects to home page' do
+=======
+  describe 'Checkout Page' do
+    let!(:product) { FactoryGirl.create(:product, title: 'Shirt') }
+
+    context 'when user has no line items' do
+      before do
+        visit '/orders/new'
+      end
+
+      it 'redirects to the home page' do
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
         expect(page).to have_content 'Your cart is empty'
       end
     end

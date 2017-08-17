@@ -7,3 +7,7 @@ App.products = App.cable.subscriptions.create "ProductsChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
+<<<<<<< HEAD
+=======
+    $(".store #main").html(data.html)
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156

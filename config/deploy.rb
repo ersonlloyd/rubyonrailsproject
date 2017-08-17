@@ -1,9 +1,15 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
+<<<<<<< HEAD
 server '34.229.150.224', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'github.com/ersonlloyd/rubyonrailsproject'
+=======
+server '54.159.194.45', port: 7171, roles: [:web, :app, :db], primary: true
+
+set :repo_url,        'git@github.com:maryjoylimjoco/depot.git'
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
 set :application,     'depot'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
@@ -79,4 +85,8 @@ namespace :deploy do
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
   after  :finishing,    :restart
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156

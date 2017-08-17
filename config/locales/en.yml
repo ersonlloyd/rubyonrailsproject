@@ -1,8 +1,16 @@
 en:
   layouts:
     application:
+<<<<<<< HEAD
       title: "The Pragmatic Bookshelf" 
       home: "Home"
       questions: "Questions"
       news: "News"
       contact: "Contact"
+=======
+      title: "The Pragmatic Bookshelf"
+      home: "Home"
+      questions: "Questions"
+      news: "News"
+      contact: "Contact"
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156

@@ -1,6 +1,10 @@
 .depot_form
   - if flash[:alert] || flash[:notice]
     %p#notice= flash[:alert] || flash[:notice]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
   = form_tag do
     %fieldset
       %legend Please Log In
@@ -11,4 +15,8 @@
         = label_tag :password, 'Password:'
         = password_field_tag :password, params[:password]
       %div
+<<<<<<< HEAD
         = submit_tag "Login"
+=======
+        = submit_tag 'Login'
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156

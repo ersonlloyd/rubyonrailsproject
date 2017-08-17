@@ -5,4 +5,8 @@ es:
       home: "Inicio"
       questions: "Preguntas"
       news: "Noticias"
+<<<<<<< HEAD
       contact: "Contacto"
+=======
+      contact: "Contacto"
+>>>>>>> 37ec9fad3749c8105f563bb14609dd20b417f156
